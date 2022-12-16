@@ -1,0 +1,42 @@
+There are 16 different categories of problems to solve on Rosalind... I think that spending some time in a few key ones would be best for my learning.. and aspiring to eventually do everything (in the case its relevant for progress) would be good after that
+
+The few I am seeing as more fundamental and likely approachable for me at this point are: 
+1. 'String Algorithms', 
+2. 'Sorting', 
+3. 'Probability', 
+4. 'Graphs', 
+5. 'Dynamic Programming', 
+6. 'Combinatorics' 
+7. 'Alignment'
+
+Of these options I think that String Algorithms, and Combinatorics interest me most to start.. They are fundamental and likely help with others above them
+So maybe I can shoot to do 10 problems in each category, then reasses what would be a wise goal from there.. I think I would like to start with String Algorithms... as upping my string game would be good. 
+
+I think this may be a good time to learn Regex.. as I will likely have many opportunities to apply the skill while processing strings.. 
+    1. so I will do some basic regex tutorials first.. 
+    2. then see how to use regex in python, 
+    3. then I will move onto solving more problems in Rosalind focusing on how to solve with base python.. 
+    3.1 then how to solve with regex.. 
+    3.2 and I will benchmark both s.t. I can really see if there is a difference in the computational time between base python and regex based solutions. 
+
+    OK for today I am going to call it quits.. much other stuff to do for school. Good sesh. (12-7-2022)
+
+12-11-2022: UPDATING PLANS
+- so far using Rosalind is working well to gamify learning python and giving nice clear examples where I can apply specific python functions and abilities.. 
+- Rosalind is build to suggest specific problems following other problems, and I think following its suggestions will make for a more interesting and hopefully naturally connected learning experience. SO: I will be recording its suggestions and completing them before getting back onto the more linear paths of completing specific modules completely. 
+
+After completing "Complementing A Strand Of DNA" 6 suggestions were given
+1. Rabbits and Recurrence Relations ✔
+2. Computing GC Content ✔ 3-4 hrs... whew.. this one was a bitch. 
+3. Counting Point Mutations
+4. Mendel's First Law
+5. Translating RNA into Protein
+6. Finding a Motif in DNA
+
+After completing these I will return to: "Consensus and Profile" in "String Algorithms" 
+
+Problem follow up notes: 
+  - for problems which are particularly challenging, or feel conceptually confusing to me, I think it would be good to look at other peoples soultions and to aim to understand the differences in their approach, the tools they used that differed and why my process may have been poorly fit to the problem in the first place. It would also be useful to benchmark other peoples solutions against my to gain some experience benchmarking and understanding who's solution is faster and why. 
+
+1. Computing GC Content: 
+  - 

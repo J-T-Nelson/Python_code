@@ -1,0 +1,96 @@
+def Hypotenuse(a, b) : 
+    sq1 = a*a;
+    sq2 = b*b;
+    c_squared = sq1+sq2;
+    return(c_squared)
+
+
+print(Hypotenuse(3,4))
+print(Hypotenuse(3,5))
+print(Hypotenuse(868, 802))
+
+# is this a comment in python? I think so! 
+list1 = ["dog", "cat", 'ham', 'mam']
+list2 = ['floor', 'flogging', 'fugging', 'shrugging']
+list3 = ['sleep', 'seep', 'creepy', 'meep']
+list4 = [list1, list2, list3]
+
+# print("This is list4: " + list4[1])  # <- type error here
+
+print("This is list3[1]: " + list3[1])
+print("This is list4[1][2]: " + list4[1][2]) # sweet the referencing that I am used to from R is also used here! 
+
+# print("default print method for list1: " + list1) # cannot concatenate it with a string.. but can print it alone... hmm 
+
+# print("default print method for list1: " + list1.__str__) # <- still not working for concatenation ... no idea what the str thing is doing actually. 
+
+# listString =  # was tryiing to find casting or some to string method.. but no dice.  
+
+# list3[4] = 'Ill fok yur mum' <- ERROR: "list assignment index out of range" 
+list3.append("ill fok yur mum")
+print(list3)
+list3[2] = "i'll beat your head with your own head dude." # <- this does work for reassignment, but does not automatically call an append function if you're to attempt to assign values to list positions which currently don't exist
+print("Demonstrating my skills with lists and printing n shit: ", end="")
+print(list3)
+
+print("gonna check out grabbing with the good notation.. : ")
+print(list3[2:4]) # damn that is cool. 
+
+bigString = "ImadeThisStringSuchThatItCanBeProductivelySlicedIThink"
+
+print(bigString[4:20])
+
+def twoPointStringGrabber(String, a, b, c, d):
+    string1 = String[a:b+1]
+    string2 = String[c:d+1]
+    list1 = [string1, string2]
+    print(list1)
+    print(string1 + " " + string2)
+    return (list1)
+
+twoPointStringGrabber("8Buh7mxt1XU2Drv0Hpeis7Ejh36K05fmIRl5G6g3nXv1MkKGrbgz79Oenanthe3o5Suno8b6iDQNAWQ9uXGeiGalpestris3kPxjU97lYPE0SAbWjRNgJxM0f9WBaTgAWVCEE1zqPgj1bndD3xUb13j3OO7GXTPspvE9y5XPyVHVNPA.", 4, 61, 86, 94)
+
+twoPointStringGrabber("HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain.", 22, 27, 97, 102)
+
+twoPointStringGrabber("z60lqKyQHjizDLx3HSQoy5eaAqbp9fsSGk9cOz2e7LepidobatrachushhgudMxvulgarisYiIu77Wv7UpjmUxduIFgx8aiFxFl2CxQTHvgWTgRfF76SdPJ3tOoBPUtwvUtpVkSYAT2dvJhomVVipvzbD183CtQCt64WKxFPymrWo5z0SNLJy.", 41, 55, 63, 70)
+
+n = 10
+for i in range (n):
+    print(i)
+# ^^ prints 0:9 ... notably sticking to the index base 0 form of python. so range(n) = [0:n-1]
+
+print(range(5, 12)) # not sure why but this doesn't print the range.. it prints "range(5, 12)" as if it were a string... weird 
+print("range(5, 12)") 
+
+# print(range(5, 12) + 1) # type error here... 
+
+
+g = range(10, 30)
+for i in g:
+    print(i)
+
+def sumOddInts(a,b):
+    span = range(a, b)
+    spanSum = 0
+    for val in span:
+        if(val % 2 == 1):
+            spanSum += val
+
+    return(spanSum)
+
+testSS = sumOddInts(100, 200)
+print("testing sumOddInts, expecting output to be 7500: " + str(testSS)) # type error... cannot concatenate int to str... (surprising) ... seems str() is the means of converting something to a string. 
+# SUCCESS!! 
+
+testSS2 = sumOddInts(4228, 9166)
+print(str(testSS2)) 
+
+
+'''This is a block comment in python I think
+I can just keep typing inbetween 3 apostrophes... '''
+# Apparently official style guides suggest that you just use multiple lines of hashtaggingin order to do multi line comments though
+# like this... what is the hotkey in VS code to make this easier though? 
+
+
+
+
