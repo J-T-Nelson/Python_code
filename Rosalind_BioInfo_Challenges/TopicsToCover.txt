@@ -28,7 +28,7 @@ I think this may be a good time to learn Regex.. as I will likely have many oppo
 After completing "Complementing A Strand Of DNA" 6 suggestions were given
 1. Rabbits and Recurrence Relations ✔
 2. Computing GC Content ✔ 3-4 hrs... whew.. this one was a bitch. 
-3. Counting Point Mutations
+3. Counting Point Mutations ✔
 4. Mendel's First Law
 5. Translating RNA into Protein
 6. Finding a Motif in DNA
@@ -38,5 +38,9 @@ After completing these I will return to: "Consensus and Profile" in "String Algo
 Problem follow up notes: 
   - for problems which are particularly challenging, or feel conceptually confusing to me, I think it would be good to look at other peoples soultions and to aim to understand the differences in their approach, the tools they used that differed and why my process may have been poorly fit to the problem in the first place. It would also be useful to benchmark other peoples solutions against my to gain some experience benchmarking and understanding who's solution is faster and why. 
 
-1. Computing GC Content: 
-  - 
+
+
+WHAT TO DO ABOUT NOVEL FUNCTIONS AND METHODS TO SOLVE OTHERWISE SIMPLE PROBLEMS:
+- After doing Counting Point Mutations I noticed that several problems were seriously overengineered, or really simplified one-liners that got the job done in ways whcih I honestly don't understand. Cool to see and a bit bewildering, as despite getting a correct solution I feel like I am not competend compared to the whizzes doing this shit. 
+- Truthfully I think its inspiring that there are such stupid ways to complete the problems.. or such brilliant ones as well, overall though, unless I think the simplified solutions are seriously doing something useful that I know I should learn, I will not look into them too deeply. 
+- If there is a context appropriate solution or tool I will take adavantage of the resource and attempt to learn the new thing as well as possible before moving on. 
