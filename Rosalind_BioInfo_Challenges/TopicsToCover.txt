@@ -29,9 +29,9 @@ After completing "Complementing A Strand Of DNA" 6 suggestions were given
 1. Rabbits and Recurrence Relations ✔
 2. Computing GC Content ✔ 3-4 hrs... whew.. this one was a bitch. 
 3. Counting Point Mutations ✔
-4. Mendel's First Law
-5. Translating RNA into Protein
-6. Finding a Motif in DNA
+4. Mendel's First Law ✔ ~50 mins ... def need to brush up on my probability theory.. its a tough subject to feel strong in. 
+5. Translating RNA into Protein ✔
+6. Finding a Motif in DNA ✔
 
 After completing these I will return to: "Consensus and Profile" in "String Algorithms" 
 
@@ -44,3 +44,21 @@ WHAT TO DO ABOUT NOVEL FUNCTIONS AND METHODS TO SOLVE OTHERWISE SIMPLE PROBLEMS:
 - After doing Counting Point Mutations I noticed that several problems were seriously overengineered, or really simplified one-liners that got the job done in ways whcih I honestly don't understand. Cool to see and a bit bewildering, as despite getting a correct solution I feel like I am not competend compared to the whizzes doing this shit. 
 - Truthfully I think its inspiring that there are such stupid ways to complete the problems.. or such brilliant ones as well, overall though, unless I think the simplified solutions are seriously doing something useful that I know I should learn, I will not look into them too deeply. 
 - If there is a context appropriate solution or tool I will take adavantage of the resource and attempt to learn the new thing as well as possible before moving on. 
+
+AFTER COMPLETING "Finding a Motif in DNA": 
+ NEW SUGGESTED PROBLEMS 
+  1. Consensus and Profile 
+  2. Overlap Graphs
+  3. Finding a Shared Motif
+  4. Finding a Protein Motif
+  5. Open Reading Frames 
+  6. Locating Restriction Sites
+  7. RNA Splicing 
+  8. Calculating Expected Offspring
+  9. Independent Alleles
+  10. Finding a Protein Motif
+  11. Inferring mRNA from Protein
+  12. Open Reading Frames
+  13. Calculating Protein Mass
+
+

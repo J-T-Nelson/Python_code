@@ -14,7 +14,7 @@ def dominantAlleleProb(homoD, hetD, homoR):
     homoRhomoR = (homoR/totalPop) * ((homoR-1)/(totalPop-1)) 
     hetDhomoR =  (hetD/totalPop) * ((homoR)/(totalPop-1)) * (1/2)  
     homoRhetD = (homoR/totalPop) * ((hetD)/(totalPop-1)) * (1/2)
-    hetDhetD = (hetD/totalPop) * ((hetD-1)/(totalPop-1)) * (1/4) 
+    hetDhetD = (hetD/totalPop) * ((hetD-1)/(totalPop-1)) * (1/4) # this multiplication factor of 1/4th may be incorrect... it may be 3/4ths. as possibly offspring for Aa x2 == AA, Aa, Aa, aa. 
         # prob(dominant Progeny) = 1 - (prob recessive progeny)
     return(1 - (homoRhomoR + hetDhomoR + homoRhetD + hetDhetD) )
 
