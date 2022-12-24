@@ -48,3 +48,5 @@ chalStrings = f.read().split()
 f.close()
 
 print(findSubStringsS(chalStrings[0], chalStrings[1])) # success! 
+"is this another way of making a comment? "
+"Yes... this is a new way of making a comment... Cool!"
