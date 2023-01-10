@@ -1,3 +1,7 @@
+
+
+
+
 # DEF: Profile Matrix - A matrix encoding the number of times that each symbol of an alphabet occurs in each position from a collection of strings 
  #  so a profile matrix in other words counts the number of times a nucleotide (or other symbol) occurs in a given column. ... and likely would represent the amount as a percentage of the total rows with a given character
 
@@ -14,12 +18,6 @@
 """ - How are matrices represented in Python? 
     - is there any reason to not just use a list or dict to represnt my profile matrix? (considering I just need to output a text version of it anyway?)
 """
-
-f = open(, 'r')
-fasta = f.read()
-f.close()
-
-seqs = fasta.split('>')[11:]
 
 testData = """>Rosalind_1
 ATCCAGCT
@@ -50,62 +48,144 @@ for s in seqs:
     #seqs[s] = s # this is invalid as I thought, still not sure how to keep a counter without just writing one in yet. 
 print(seqs2)
 
-profileMat = [[], [], [], []]
 transpose = list(zip(*seqs2))
-colNum = 0
+print("PRINTING TRANSPOSE: " + str(transpose))
+
+A = []
+C = []
+G = []
+T = []
 for row in transpose:
-    profileMat[0][colNum] = row.count('A')
-    profileMat[1][colNum] = row.count('C')
-    profileMat[2][colNum] = row.count('G')
-    profileMat[3][colNum] = row.count('T')
-    colNum += 1
+    A.append(row.count('A'))
+    C.append(row.count('C'))
+    G.append(row.count('G'))
+    T.append(row.count('T'))
 
+#print(str(A) + '\n' + str(C) + '\n' + str(G) + '\n' + str(T)) # beautiful! 
 # need to work out consensus sequence now... 
+ # if there are multiple consensus strings due to ties in consensus characters at a given position I think we should just store the fact that there are multiple consensus sequences. The current problem doesn't require we store all of them, rather that we just get a single valid consensus string. 
 
+profileMat = [A,C,G,T]
 pMtrans = list(zip(*profileMat))
+conSeq = ''
+pos = -1 
 for row in pMtrans:
-    #grab greatest value.. and somehow associate with respective letter? 
+    # each row of pMtrans is a col of the profile matrix. position 0 = A, 1 = C, 2 = G, 3 = T
+    consMax = max(row)
+    pos+=1
+    if A[pos] == consMax:
+        conSeq += 'A'
+        continue
+    if C[pos] == consMax:
+        conSeq += 'C'
+        continue
+    if G[pos] == consMax:
+        conSeq += 'G'
+        continue
+    if T[pos] == consMax:
+        conSeq += 'T'
+        continue
+
+print(conSeq)
+print("A: " + str(A) + '\n' + "C: " +  str(C) + '\n' + "G: " + str(G) + '\n' + "T: " + str(T)) # beautiful! 
+
+
+
+# ok my code works for the practice example. Now to wrap things in a function which can take a file in and produce the desired output. 
+
+def consAndProfile(filePath, seqStart = 11, debugPrinting = False):
+    # grabbing sequences as arrays from file
+    f = open(filePath, 'r')
+    seqs = f.read().split('>')[1:] 
+    f.close()
+
+    seqs2 = []
+    for s in seqs:
+        seqs2.append(s[seqStart:].replace('\n', '')) # DNA seqs are now in seqs2
+
+    if debugPrinting:
+        print(seqs2) # printing for debugging
+
+    # setting up profile matrix for DNA sequences
+    transpose = list(zip(*seqs2))
+
+    if debugPrinting:
+        print("printing Transpose:") # debug printing
+        print(transpose)
+
+    A = []
+    C = []
+    G = []
+    T = []
+    for row in transpose: #row of the transpose is a col of the original matrix (which in this case is a non-native representation of the list seqs2 )
+        A.append(row.count('A'))
+        C.append(row.count('C'))
+        G.append(row.count('G'))
+        T.append(row.count('T'))
+
+    profileMat = [A,C,G,T]
+
+    # determining one single consensus sequence
+    pMtrans = list(zip(*profileMat))
+    conSeq = ''
+    pos = -1 
+    for row in pMtrans:
+        # each row of pMtrans is a col of the profile matrix. position 0 = A, 1 = C, 2 = G, 3 = T
+        consMax = max(row)
+        pos+=1
+        if A[pos] == consMax:
+            conSeq += 'A'
+            continue
+        if C[pos] == consMax:
+            conSeq += 'C'
+            continue
+        if G[pos] == consMax:
+            conSeq += 'G'
+            continue
+        if T[pos] == consMax:
+            conSeq += 'T'
+            continue
+
+    #printing results:
+    print(conSeq)
+    print("A: " + str(A).replace('[', '').replace(']', '').replace(',', '') + '\n' + 
+          "C: " + str(C).replace('[', '').replace(']', '').replace(',', '') + '\n' + 
+          "G: " + str(G).replace('[', '').replace(']', '').replace(',', '') + '\n' + 
+          "T: " + str(T).replace('[', '').replace(']', '').replace(',', ''))
+    outputFile = open('D:/Programming/Python_code/Rosalind_BioInfo_Challenges/StringAlgorithms/consOutput.txt', 'w')
+    outputFile.write(conSeq + '\n')
+    outputFile.write('A: ' + str(A).replace('[', '').replace(']', '').replace(',', '') + '\n')
+    outputFile.write('C: ' + str(C).replace('[', '').replace(']', '').replace(',', '') + '\n')
+    outputFile.write('G: ' + str(G).replace('[', '').replace(']', '').replace(',', '') + '\n')
+    outputFile.write('T: ' + str(T).replace('[', '').replace(']', '').replace(',', '') + '\n')
+
+    # printing validation stats: 
+    if debugPrinting:
+        if len(conSeq) == len(seqs2[1]):
+            print("Length of conSeq == length of Sequences")
+        else:
+            print("Length of conSeq != length of Sequences")
+    
 
 
 
 
 
 
-
-###### EXPERIMENTING ####################################### 
-# eD = {}
-# eD[str(0)] +=1
-# print(eD)
-
-eD = {}
-eD[str(0)] = 0
-eD[str(0)] +=1
-print(eD) # dict value must be initialized at 0 before incrementing up! 
+# TEST RUN OF FUNC: 
 
 
-# to use for loops to count occurrences of letters at specific positions could be ugly... a dict would clean it up a bit I think.. but we may need several dicts... I think if we could actually have a matrix data structure that may be most elegant though. 
-colNumj = 0
-dictList = [{},{},{},{}]
-#OR
-A, C, G, T = {}, {}, {}, {}
-dL = []
-for seq in seqs2:
-    cntr = 0
-    for char in seq:
-        if char == 'A':
-            A[str(cntr)] = 0 # starting to see how annyoing it will be to use dictionaries like this... I think directly treating the list of arrays as a matrix to produce another matrix will be much more efficient and writable 
 
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# functions works so far... so lets test it on the real prob now. 
 
-# Transpose the matrix using zip()
-transposed_matrix = list(zip(*matrix))
+consAndProfile("C:\\Users\\Tanner_N\Downloads\\rosalind_cons (1).txt", 14)
 
-#see what *matrix do :: `*` is used to unpack elements of a list. It is thus commonly used to pass multiple arguments to functions by unpacking a list as multiple arguments to a function. 
-print(matrix)
-print(*matrix)
+consAndProfile('D:/Programming/Python_code/Rosalind_BioInfo_Challenges\\StringAlgorithms\\consTestFile.txt') # seems only full path referencing is working.... probably because I am running the terminal in R_projects for some reason... idk 
 
-# Iterate over the columns of the transposed matrix
-for col in transposed_matrix:
-    print(col)
+consAndProfile("D:\\Programming\\Python_code\\Rosalind_BioInfo_Challenges\\StringAlgorithms\\ConsensusAndProfileTestData2.txt") # this is solving correctly.. however I am still failing on the data from rosalind.. 
 
-###### END #############################################
+
+consAndProfile("C:\\Users\\Tanner_N\Downloads\\rosalind_cons (3).txt", 14) # finally SUCCESS!! ... I was just not formatting my output exactly as they were.. not removing certain characters which I didn't recognize as significant.. 
+
+
+

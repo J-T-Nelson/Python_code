@@ -41,13 +41,13 @@ Problem follow up notes:
 
 
 WHAT TO DO ABOUT NOVEL FUNCTIONS AND METHODS TO SOLVE OTHERWISE SIMPLE PROBLEMS:
-- After doing Counting Point Mutations I noticed that several problems were seriously overengineered, or really simplified one-liners that got the job done in ways whcih I honestly don't understand. Cool to see and a bit bewildering, as despite getting a correct solution I feel like I am not competend compared to the whizzes doing this shit. 
+- After doing Counting Point Mutations I noticed that several problems were seriously overengineered, or really simplified one-liners that got the job done in ways whcih I honestly don't understand. Cool to see and a bit bewildering, as despite getting a correct solution I feel like I am not competent compared to the whizzes doing this shit. 
 - Truthfully I think its inspiring that there are such stupid ways to complete the problems.. or such brilliant ones as well, overall though, unless I think the simplified solutions are seriously doing something useful that I know I should learn, I will not look into them too deeply. 
 - If there is a context appropriate solution or tool I will take adavantage of the resource and attempt to learn the new thing as well as possible before moving on. 
 
 AFTER COMPLETING "Finding a Motif in DNA": 
  NEW SUGGESTED PROBLEMS 
-  1. Consensus and Profile 
+  1. Consensus and Profile ✔ ... took entirely too long.. mostly because I havn't been working on python at all recently. I did a pretty good job overall I think, just need to have dedicated work blocks to avoid taking so long on error prone problems like this one. 
   2. Overlap Graphs
   3. Finding a Shared Motif
   4. Finding a Protein Motif
