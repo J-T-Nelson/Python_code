@@ -1,0 +1,3 @@
+Rosalind_5617 Rosalind_4233
+Rosalind_0996 Rosalind_1721
+Rosalind_1973 Rosalind_0437

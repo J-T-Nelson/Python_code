@@ -21,6 +21,12 @@
 		"prefix" : ["#E", "expc"], // the first one doesn't work because its a comment.. the second prefix does function however. 
 		"body" : ["###### EXPERIMENTING ####################################### \n###### END #############################################"],
 		"description" : "Code organization tool for deliniting experimentation spaces"
+	},
+
+	"Code Block": {
+		"prefix" : ["cdb", "CB"],  
+		"body" : ["######-----  -----####################################### "],
+		"description" : "Code organization line for deliniating distinct spaces, ideas, or content within a script"
 	}
 	
 }

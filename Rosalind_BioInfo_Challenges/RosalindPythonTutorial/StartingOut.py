@@ -331,3 +331,25 @@ countWordsWithDict(dataTest)
 
 
 
+
+
+def getSubstrings(string, substringSize = 1):
+    
+    numSubs = len(string) - len(substringSize) + 1
+    ssList = [0]*numSubs
+
+    for i in range(numSubs):
+        ssList[i] = string[i: (substringSize+i)]
+
+    print(ssList)
+    return(ssList)
+
+
+def natNumSum(num = 10):
+    Sum = (num*(num+1))/2
+    return int(Sum)
+
+natNumSum(3)
+natNumSum(10)
+natNumSum(100)
+natNumSum(1000)

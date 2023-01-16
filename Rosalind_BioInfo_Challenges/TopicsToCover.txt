@@ -47,18 +47,25 @@ WHAT TO DO ABOUT NOVEL FUNCTIONS AND METHODS TO SOLVE OTHERWISE SIMPLE PROBLEMS:
 
 AFTER COMPLETING "Finding a Motif in DNA": 
  NEW SUGGESTED PROBLEMS 
+      SIDENOTE: (1-14-2023) I will be adding any new suggested problems which come up along the path of current suggestions.. that way I'll just have a proper meandering through the content which requires me to be good at remembering concepts and techniques for the various problem types across longer gaps of absence. 
+
   1. Consensus and Profile ✔ ... took entirely too long.. mostly because I havn't been working on python at all recently. I did a pretty good job overall I think, just need to have dedicated work blocks to avoid taking so long on error prone problems like this one. 
-  2. Overlap Graphs
-  3. Finding a Shared Motif
+  2. Overlap Graphs ✔ ... again taking too long because I am having disjoint sessions with large gaps inebetween which make it more difficult to remember the small details that matter when composing as solution. 
+  3. Finding a Shared Motif ✔ ... This was legitimately hard. Since I am not using any library to help with this my solution was pretty slow computationally as I was performing an exhaustive search. For strings of len 1000, that means .5mil loops each loop containing increasingly lengthy inner loops. 
+   ^^^^ given the lack of wit and elegance involved in my solution to this problem I want to take some time to study answers from others.. I see multiple methods that use different tactics and complexities to arrive at solutions 
   4. Finding a Protein Motif
   5. Open Reading Frames 
   6. Locating Restriction Sites
   7. RNA Splicing 
   8. Calculating Expected Offspring
   9. Independent Alleles
-  10. Finding a Protein Motif
+  10. 
   11. Inferring mRNA from Protein
   12. Open Reading Frames
   13. Calculating Protein Mass
+  14. Genome Assembly As Shortest Superstring
+  15. Perfect Matchings and RNA Secondary Structures
+  16. Completing a Tree 
+  17. 
 
 
