@@ -1,0 +1,10 @@
+# going to record the various modules I will need to install and other actions required for my lappy here to ease the process..
+
+COMMANDS: 
+pip install numpy
+pip install sys
+pip install matplotlib
+pip install seaborn
+
+
+TODO: 

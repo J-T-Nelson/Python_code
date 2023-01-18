@@ -1,0 +1,12 @@
+Decision Trees are being introduced first as the example of a simple model which may be used in machine learning, I would often refer to these as flowcharts, or decision flowcharts. Maybe there is a valid distinction to be made however as I don't see ALL of the features of a decision flowchart present in the decision tree right now. 
+
+The act of capturing patterns found within the data (a sort of rigorous categorization), is called fitting or training the model. The data used for fitting the model is referred to as the training data. 
+
+After a model has been fit, it can be applied to novel data in order to predict outcomes. (I don't believe the first itteration of a model always performs well, though, from what I understand it is after several deployments which the model begins to really become robust)
+
+A decision tree which captures more 'splits' or references more distinct properties of each observation as means towards categorization is a 'deeper' tree. It possesses more splits and thus is larger / deeper. 
+
+############ Basic data exploration #######################
+
+The first step in any machine learning project is familiarize yourself with the data. You'll use the Pandas library for this. Pandas is the primary tool data scientists use for exploring and manipulating data
+
