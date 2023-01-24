@@ -12,6 +12,7 @@ def prettify_graph(graph):
     # Label the y-axis
     graph.set_ylabel("Balance")
     # Bonus: format the numbers on the y-axis as dollar amounts
+    
     # An array of the values displayed on the y-axis (150, 175, 200, etc.)
     ticks = graph.get_yticks()
     # Format those values into strings beginning with dollar sign
