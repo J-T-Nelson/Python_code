@@ -30,7 +30,8 @@ npNumM = numberMat.to_numpy()
 # print(numMat3)
 print(npNumM)
 print(np.multiply(npNumM,npNumM)) # works for matrix elementwise multiplication of 2 matrices 
-
+print(npNumM.data) # <memory at 0x000001FC88309E50>
+print(npNumM.ndim) # 2
 # Sparse model is one in which many elements within the model will become 0 when calculated.. 
 # different norms allow one to see what effects each feature might have on ones data by revealing which ones are contributing most to a given predictive model... he is saying th l1 norm helps select / identify important features. 
 
@@ -45,9 +46,15 @@ val = 18+15+18+16+17+15
 print(val) # 99 ... yes a sum indeed 
 
 
+A = np.array([[1,2,3], [2,4,5], [5,6,7]])
+print("ord='fro' for A :",np.linalg.norm(A, ord='fro'))
 
 
+B = np.full((3,3), 2)
+print(B)
 
+spaced = np.linspace(0,20,5)
+print(spaced)
 
 
 
