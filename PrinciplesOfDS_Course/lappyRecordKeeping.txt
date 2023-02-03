@@ -5,6 +5,7 @@ pip install numpy
 pip install sys
 pip install matplotlib
 pip install seaborn
+pip3 install networkx
 
 
 TODO: 
