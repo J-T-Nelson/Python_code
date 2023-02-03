@@ -56,6 +56,45 @@ print(B)
 spaced = np.linspace(0,20,5)
 print(spaced)
 
+print("info on cars: \n",cars.info())
+print("description of cars: \n",cars.describe())
+
+import matplotlib.pyplot as plt
+
+# cars.hist(bins=50, figsize=(20,15))
+# plt.show()
+
+# plt.plot(cars['Cylinders'])
+# plt.show()
+
+# plt.hist(cars['Horsepower'],bins=50)
+# plt.show() # showing multiple plots requires exiting one to view the next right now .... 
+# plt.boxplot(cars['Acceleration'])
+# plt.show()
+
+# plt.boxplot(cars['Acceleration'], vert=True)
+# plt.show()
+
+# plt.scatter(cars['Cylinders'], cars['MPG'])
+# plt.show()
+
+# plt.scatter(cars['Cylinders'], cars['Acceleration'])
+# plt.show()
+
+####### NOT SURE HOW TO REPRODUCE THE CORRELATION DIAGRAM LIKE IN THE SLIDE ppt4
+#hcorr = cars.corr()
+#hcorr.style.background_gradient()
+#hcorr.show()
+
+# categorical feature inspection 
+
+print(cars.columns)
+print(cars['Origin'].value_counts())
+#print(cars['Model'].value_counts())
+
+#print(cars.isnull()) # returns boolean matrix
+print(cars.isnull().sum()) # returns num missing values by col ... very nice and concise 
+print('DF.shape[0] ==', cars.shape[0]) # gets the # of rows in the first col? 
 
 
 
