@@ -6,6 +6,10 @@ pip install sys
 pip install matplotlib
 pip install seaborn
 pip3 install networkx
+pip install scikit-learn 
+ ----- This is sklearn... there is just some weird interaction where sklearn is a abbreviated... but (previously) grabbable alias of scikit-learn.. for me installing 'sklearn' just doesn't actuallly work... very confusing. So just don't ever install it that way, as there is some weirdness that is easily avoided by just installing it by full name. You can however, still import it by 'sklearn'
+pip install -U 'packageName' <- to upgrade packages
+pip install -h <- to see help message 
 
 
 TODO: 
