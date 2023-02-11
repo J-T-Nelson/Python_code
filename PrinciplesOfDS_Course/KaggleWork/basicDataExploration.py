@@ -111,7 +111,7 @@ melbModel_1.fit(train_X, train_y)
 val_predictions = melbModel_1.predict(val_X)
 print("MAE of train test split operation:", mean_absolute_error(val_y, val_predictions)) # 261323.02905100066
 
-
+print("predic prices:", predictedMelbPrices) #literally just a list of values... the model takes a bunch of different fields in wrt a given sample to predict, and attempts to make a mathematical function which captures what the price should be. A beautifully simple concept with deep complexity at its core. 
 ######----- Underfitting and OVerfitting -----####################################### 
 
 
