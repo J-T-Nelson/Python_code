@@ -18,7 +18,7 @@
 
 	
 	"Experimentation Block": {
-		"prefix" : ["#E", "expc"], // the first one doesn't work because its a comment.. the second prefix does function however. 
+		"prefix" : ["expb"], // the first one doesn't work because its a comment.. the second prefix does function however. 
 		"body" : ["###### EXPERIMENTING ####################################### \n###### END #############################################"],
 		"description" : "Code organization tool for deliniting experimentation spaces"
 	},
