@@ -1,0 +1,13 @@
+Using this file to store the cofig changes I make to VS code to make them easier to translate to new systems 
+
+------------------------ semicolons `;` indicate chord commands ---------------------------
+
+COMMAND       -       KEY BINDING SET     -       KEY BINDING REMOVED  
+
+New Python File - ctrl + shift + N ; ctrl + shift + P  - NONE   
+New Jupyter Notebook - ctrl + shift + N ; ctrl + shift + N - NONE
+
+acceptSelectedSuggestionOnEnter - NONE - Enter
+
+
+
