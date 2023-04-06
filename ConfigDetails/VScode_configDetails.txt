@@ -10,4 +10,12 @@ New Jupyter Notebook - ctrl + shift + N ; ctrl + shift + N - NONE
 acceptSelectedSuggestionOnEnter - NONE - Enter
 
 
+---------------------------------------------------------------------
+--                      SETTING CHANGES                            --
+---------------------------------------------------------------------
+SETTING_NAME       -       SETTING_SELECTED
+____________               ________________
+autoFindInSelection        multiline
+
+
 
