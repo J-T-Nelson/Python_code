@@ -1,0 +1,23 @@
+##### DOCUMENT PURPOSE ######
+Capture configuration issues I encounter such that I can have a refernce for my gained experience in the future. 
+
+## FORMAT OF DOC ##
+- issues should be numbered such that thier solution is easily referenced and the document is easily searchable
+
+##### ISSUES #####
+1. Intellisense wasn't working in Jupyter notebooks. 
+2.
+
+
+
+#### SOLUTIONS / ACTIONS TAKEN ####
+1. Disabling 'IntelliCode API Usage Examples' seemed to fix it, 
+I also did a few other things, in 'settings.json' I added: 
+````````````````````````
+    "python.languageServer": "Pylance",
+         "python.autoComplete.extraPaths": [
+    
+             "C:\\Users\\Tanner_N\\AppData\\Local\\Python\\python.exe"
+        ],
+````````````````````````
+2.
